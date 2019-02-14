@@ -101,6 +101,7 @@ TEMPLATES = [
 MIDDLEWARE = (
     'cms.middleware.utils.ApphookReloadMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'solid_i18n.middleware.SolidLocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -138,7 +139,9 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'dcms'
+    'dcms',
+    'parler',
+    'aldryn_bootstrap3',
 )
 
 LANGUAGES = (
